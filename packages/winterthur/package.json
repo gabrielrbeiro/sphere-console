@@ -1,0 +1,37 @@
+{
+  "name": "@gabrielrbeiro/winterthur",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist",
+    "/dist/style.css"
+  ],
+  "author": {
+    "email": "ribeirogabriel@icloud.com",
+    "name": "Gabriel Ribeiro"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc && vite build",
+    "tailwindcss": "tailwindcss"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.46",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
