@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { Button } from '.';
 
-const meta = {
+const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
   parameters: {
@@ -31,7 +31,7 @@ const meta = {
       }
     }
   },
-} satisfies Meta<typeof Button>;
+};
 
 export default meta;
 

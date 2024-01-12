@@ -1,6 +1,6 @@
 .button {
   @apply flex items-center justify-center;
-  @apply h-8 px-4 text-sm font-medium rounded-sm border-[1.5px];
+  @apply h-8 px-4 text-sm font-medium rounded-sm border-[1px];
   @apply focus:shadow-md hover:shadow-md active:shadow-none;
   @apply transition-colors duration-75 ease-linear;
   @apply disabled:opacity-70 disabled:focus:shadow-none disabled:hover:shadow-none;
