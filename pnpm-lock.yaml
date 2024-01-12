@@ -210,6 +210,13 @@ importers:
         version: 5.3.3
 
   packages/winterthur:
+    dependencies:
+      '@fontsource/noto-sans':
+        specifier: ^5.0.18
+        version: 5.0.18
+      remixicon:
+        specifier: ^4.0.1
+        version: 4.0.1
     devDependencies:
       '@storybook/addon-essentials':
         specifier: ^7.6.7
@@ -2237,6 +2244,10 @@ packages:
   /@floating-ui/utils@0.2.1:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: true
+
+  /@fontsource/noto-sans@5.0.18:
+    resolution: {integrity: sha512-tPMBWiI268eApqBl6QyAH0I3dvLaHuECJ9H1S0Ve2qd380tuPcHSJaeBv4CEha643hJ+KH1Nm7FnHhQSeZvHHw==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
@@ -9835,6 +9846,10 @@ packages:
       mdast-util-to-string: 1.1.0
       unist-util-visit: 2.0.3
     dev: true
+
+  /remixicon@4.0.1:
+    resolution: {integrity: sha512-Apa13Q01mFIuQEMvSVni8NnF9cV0vud9YXb2prQ+g3jmWpxKoFCL+yIiQ+9JCeLptdGKyoqVjCYOwwBQVHdciQ==}
+    dev: false
 
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}

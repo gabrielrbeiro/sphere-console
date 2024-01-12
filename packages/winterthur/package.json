@@ -44,5 +44,9 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans": "^5.0.18",
+    "remixicon": "^4.0.1"
   }
 }
