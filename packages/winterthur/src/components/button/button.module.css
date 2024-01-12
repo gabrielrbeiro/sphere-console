@@ -1,6 +1,6 @@
 .button {
   @apply flex items-center justify-center;
-  @apply h-8 px-4 text-sm font-medium rounded-sm border-[1px];
+  @apply h-10 px-3 text-base font-medium rounded-sm border-[1px];
   @apply focus:shadow-md hover:shadow-md active:shadow-none;
   @apply transition-colors duration-75 ease-linear;
   @apply disabled:opacity-70 disabled:focus:shadow-none disabled:hover:shadow-none;
@@ -9,7 +9,7 @@
 }
 
 .button_iconContainer {
-  @apply h-8 w-8 -ml-2 flex items-center justify-center text-lg;
+  @apply h-8 w-8 -ml-2 flex items-center justify-center text-xl;
 }
 
 .button_iconContainer > i {

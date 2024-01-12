@@ -1,12 +1,15 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.tsx'],
   theme: {
     extend: {
       fontFamily: {
-        screen: ["'Noto Sans'", "sans-serif"]
+        screen: ["'Noto Sans'", ...defaultTheme.fontFamily.sans]
       },
       colors: {
+        text: 'rgb(89, 89, 89)',
         primary: {
           100: 'rgb(229, 244, 255)',
           200: 'rgb(179, 223, 255)',
@@ -40,6 +43,9 @@ export default {
           800: 'rgb(120, 15, 8)',
           900: 'rgb(72, 9, 5)',
         }
+      },
+      transitionProperty: {
+        'text-input': 'border-color, box-shadow'
       }
     },
   },

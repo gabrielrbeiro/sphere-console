@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-// import { action } from "@storybook/addon-actions";
+import { action } from "@storybook/addon-actions";
 import { TextInput } from '.';
 
 const meta: Meta<typeof TextInput> = {
@@ -8,12 +8,17 @@ const meta: Meta<typeof TextInput> = {
   parameters: {
     layout: 'centered'
   },
-  args: {},
+  args: {
+    onChange: action('onChange'),
+  },
   argTypes: {
     type: {
       options: ["email", "number", "password", "search", "tel", "text", "url"],
       control: {type: 'select'}
     },
+    label: {
+      control: {type: 'text'}
+    }
   },
 };
 
@@ -23,6 +28,28 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Default',
   args: {
-    type: 'text'
+    type: 'text',
+    id: 'txtStorybookDefault',
+    label: 'First name',
+  }
+};
+
+export const Disabled: Story = {
+  name: 'Disabled',
+  args: {
+    type: 'text',
+    id: 'txtStorybookDisabled',
+    label: 'First name',
+    disabled: true
+  }
+};
+
+export const WithIcon: Story = {
+  name: 'With Icon',
+  args: {
+    type: 'text',
+    id: 'txtStorybookDisabled',
+    label: 'Home address',
+    icon: 'ri-home-5-line'
   }
 };

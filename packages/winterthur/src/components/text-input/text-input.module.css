@@ -1,3 +1,30 @@
 .textInput {
-  @apply border-[1px] border-slate-500 h-8;
+  @apply h-full w-full font-screen outline-none ring-0 text-text;
+}
+
+.textInputContainer {
+  @apply w-full flex flex-col
+}
+
+.textInputContainerDisabled {
+  @apply opacity-60;
+}
+
+.textInputLabel {
+  @apply font-semibold text-text mb-1;
+}
+
+.textInputWrapper {
+  @apply border-[1px] border-slate-500 h-10 w-full font-screen outline-none ring-0
+  px-3 text-text rounded-sm shadow-sm flex;
+  @apply focus-within:border-primary-600 focus-within:ring-2 focus-within:ring-primary-200 focus-within:shadow-none;
+  @apply transition-text-input duration-150 ease-linear;
+}
+
+.textInputIcon {
+  @apply h-full -ml-3 w-10 flex items-center justify-center text-xl;
+}
+
+.textInputIcon > i {
+  @apply flex items-center justify-center w-full h-full;
 }
