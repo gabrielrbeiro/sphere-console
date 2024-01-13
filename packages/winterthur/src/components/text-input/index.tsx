@@ -8,6 +8,7 @@ export type TextInputProps = {
   onChange?: ChangeEventHandler<HTMLInputElement>
   disabled?: boolean
   icon?: string
+  suffix?: string
 }
 
 export const TextInput: React.FC<TextInputProps> = ({
@@ -16,7 +17,8 @@ export const TextInput: React.FC<TextInputProps> = ({
                                                       id,
                                                       onChange,
                                                       disabled = false,
-                                                      icon
+                                                      icon,
+  suffix
                                                     }) => {
 
   return (
@@ -34,6 +36,7 @@ export const TextInput: React.FC<TextInputProps> = ({
           onChange={onChange}
           disabled={disabled}
         />
+        {suffix && <span className={`${styles.textInputSuffix} group-focus-within:text-primary-700`}>{suffix}</span>}
       </div>
     </div>
   )

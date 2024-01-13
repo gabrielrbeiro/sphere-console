@@ -16,15 +16,19 @@
 
 .textInputWrapper {
   @apply border-[1px] border-slate-500 h-10 w-full font-screen outline-none ring-0
-  px-3 text-text rounded-sm shadow-sm flex;
+  px-4 text-text rounded-sm shadow-sm flex;
   @apply focus-within:border-primary-600 focus-within:ring-2 focus-within:ring-primary-200 focus-within:shadow-none;
   @apply transition-text-input duration-150 ease-linear;
 }
 
 .textInputIcon {
-  @apply h-full -ml-3 w-10 flex items-center justify-center text-xl;
+  @apply h-full -ml-2 mr-1 w-10 flex items-center justify-center text-xl;
 }
 
 .textInputIcon > i {
   @apply flex items-center justify-center w-full h-full;
+}
+
+.textInputSuffix {
+  @apply flex shrink-0 h-full items-center justify-center opacity-70 ml-3 text-sm
 }

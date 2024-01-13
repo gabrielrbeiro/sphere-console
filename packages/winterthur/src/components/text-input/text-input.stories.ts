@@ -53,3 +53,14 @@ export const WithIcon: Story = {
     icon: 'ri-home-5-line'
   }
 };
+
+export const WithSuffix: Story = {
+  name: 'With Suffix',
+  args: {
+    type: 'text',
+    id: 'txtStorybookDisabled',
+    label: 'Search',
+    suffix: '⌘ + K',
+    icon: 'ri-search-line'
+  }
+};
