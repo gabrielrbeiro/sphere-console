@@ -6,5 +6,5 @@
 
 html, body {
   font-size: 14px;
-  @apply font-screen;
+  @apply font-screen bg-slate-100;
 }

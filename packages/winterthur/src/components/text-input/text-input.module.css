@@ -1,5 +1,6 @@
 .textInput {
-  @apply h-full w-full font-screen outline-none ring-0 text-text;
+  @apply h-full w-full font-screen outline-none ring-0 text-text bg-transparent;
+  @apply placeholder-text placeholder-opacity-50
 }
 
 .textInputContainer {

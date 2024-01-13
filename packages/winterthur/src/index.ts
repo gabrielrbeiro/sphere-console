@@ -10,3 +10,5 @@ import "@fontsource/noto-sans/600-italic.css"
 
 export * from "./components/button"
 export * from "./components/text-input"
+export * from "./components/header"
+export * from "./components/user-info"

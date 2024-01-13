@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex flex-row-reverse h-full items-center pl-4 pr-2;
+}
+
+.info {
+  @apply flex flex-col text-xs items-end justify-center text-text select-none;
+}
+
+.avatar {
+  @apply h-10 w-10 rounded-full bg-slate-200 overflow-hidden ml-2;
+}
+
+.email {
+  @apply opacity-70;
+}
+
+.name {
+  @apply font-semibold;
+}

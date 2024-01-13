@@ -1,0 +1,21 @@
+.header {
+  @apply h-12 bg-white border-b-[1px] border-slate-300 flex items-center justify-start;
+}
+
+.headerMenuButton {
+  @apply h-8 w-8 flex items-center justify-center outline-none ring-0 mx-2;
+  @apply hover:bg-primary-200 focus:bg-primary-200 hover:text-primary-800 focus:text-primary-800;
+  @apply transition-colors duration-150 ease-in-out;
+}
+
+.divider {
+  @apply h-12 border-r-[1px] border-slate-300 w-[1px];
+}
+
+.sectionTitle {
+  @apply text-text opacity-70 ml-4 select-none;
+}
+
+.rightMenu {
+  @apply flex items-center justify-end ml-auto h-full;
+}
