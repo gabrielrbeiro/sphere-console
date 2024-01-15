@@ -1,9 +1,9 @@
-import {Button} from "@gabrielrbeiro/winterthur";
+import { Header } from "@logicsphere/winterthur";
 
 function App() {
-    return (
-        <Button label={"Hello world"}/>
-    )
+  return (
+    <Header moduleTitle={"Admin Console"} pageTitle={"Home"}/>
+  )
 }
 
 export default App
